@@ -1,1 +1,37 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dash X</string>
+    <string name="t_radio">RÁDIÓ</string>
+    <string name="t_navi">NAVI</string>
+    <string name="t_music">ZENE</string>
+    <string name="t_phone">TELEFON</string>
+    <string name="t_web">NET</string>
+    <string name="t_apps">APPOK</string>
+    <string name="cant_open">Nem nyitható meg</string>
+    <string name="loading">Csatlakozás…</string>
+    <string name="live">ÉLŐ</string>
+    <string name="stream_error">Adáshiba</string>
+    <string name="nothing">Nincs lejátszás</string>
+    <string name="tap_enable">Érintsd meg: lejátszási infó engedélyezése</string>
+    <string name="search_hint">Rádió keresése…</string>
+    <string name="search">KERESÉS</string>
+    <string name="favorites">KEDVENCEK</string>
+    <string name="searching">Keresés…</string>
+    <string name="net_error">Hálózati hiba</string>
+    <string name="results">%1$d adó</string>
+    <string name="no_favs">Még nincs kedvenc. Tartsd nyomva az adót a hozzáadáshoz. Népszerű adók látszanak.</string>
+    <string name="fav_added">Kedvencekhez adva</string>
+    <string name="fav_removed">Törölve a kedvencek közül</string>
+    <string name="play">LEJÁTSZ</string>
+    <string name="stop">STOP</string>
+    <string name="configure_button">Gomb funkciója</string>
+    <string name="choose_app">Alkalmazás kiválasztása…</string>
+    <string name="b_radio">Beépített: Rádió</string>
+    <string name="b_apps">Beépített: Összes app</string>
+    <string name="reset">Alapértelmezett</string>
+    <string name="pick_app">Válassz appot ehhez a gombhoz</string>
+    <string name="m_accent">Kiemelő szín</string>
+    <string name="m_media">Lejátszási infó engedély</string>
+    <string name="m_home">Alapértelmezett launcher beállítása</string>
+    <string name="m_full">Teljes képernyő be/ki</string>
+</resources>
