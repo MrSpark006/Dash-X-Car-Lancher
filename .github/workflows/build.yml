@@ -24,6 +24,26 @@ jobs:
         with:
           gradle-version: "8.9"
 
+      - name: Sanitize + validate XML resources
+        run: |
+          set -e
+          python3 - <<'PY'
+          import glob, xml.dom.minidom
+          bad = 0
+          for f in glob.glob("app/src/main/**/*.xml", recursive=True):
+              b = open(f, "rb").read()
+              clean = b.decode("utf-8-sig", errors="replace").replace("\r\n", "\n").replace("\ufeff", "").replace("\u200b", "").lstrip()
+              if clean.encode() != b:
+                  print("FIXED:", f, "head bytes:", b[:12])
+                  open(f, "wb").write(clean.encode())
+              try:
+                  xml.dom.minidom.parse(f)
+              except Exception as e:
+                  bad = 1
+                  print("BAD XML:", f, e)
+          raise SystemExit(bad)
+          PY
+
       - name: Build debug + release APK
         run: gradle --no-daemon --stacktrace assembleDebug assembleRelease
 
