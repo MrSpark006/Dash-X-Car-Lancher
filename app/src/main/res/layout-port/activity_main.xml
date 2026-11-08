@@ -1,0 +1,77 @@
+drawable<?xml version="1.0" encoding="utf-8"?>
+<!-- Portrait / phone layout: dial + media bar on top, two rows of 3 tiles below -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <hu.dashx.DialView
+            android:id="@+id/dial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <hu.dashx.MediaBar
+            android:id="@+id/media"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:orientation="horizontal">
+
+        <hu.dashx.TileView
+            android:id="@+id/t0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <hu.dashx.TileView
+            android:id="@+id/t1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <hu.dashx.TileView
+            android:id="@+id/t2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:orientation="horizontal">
+
+        <hu.dashx.TileView
+            android:id="@+id/t3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <hu.dashx.TileView
+            android:id="@+id/t4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <hu.dashx.TileView
+            android:id="@+id/t5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
