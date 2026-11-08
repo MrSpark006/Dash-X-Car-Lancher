@@ -1,1 +1,2 @@
-
+Title (store): Dash X - Car Launcher
+Icon label:    Dash X
